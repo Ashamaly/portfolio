@@ -12,6 +12,13 @@ body {
 
 main {
     background-color: white;
+    min-height: calc(100vh - 140px); 
+}
+
+@media only screen and (min-width: 1000px) {
+    main{
+    min-height: calc(100vh - 330px); /*% didnt work so set to view height minus the footer and header*/
+    }
 }
 
 header {
@@ -293,8 +300,27 @@ footer ul li a {
     grid-area: main;
     line-height: 35px;
 }
+
+.pmain img {
+    width: 100%;
+}
+
 .info {
     grid-area: side;
+}
+
+.info a {
+    color: #111;
+    transition-duration: 0.5s;
+}
+
+.info a:hover {
+    color: #ccc;
+}
+
+.info h3 {
+    font-weight: 300;
+    line-height: 40px;
 }
 
 .project-container {
@@ -320,6 +346,10 @@ footer ul li a {
     "side main main"
     ;
     }
+
+    .pmain img {
+        width: 90%;
+    }
 }
 
 .contact-container {
@@ -343,8 +373,9 @@ footer ul li a {
 
 @media only screen and (min-width: 1000px) {
     .project-container {
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: 
-        "side main main"
-        "side main main";
+        "side main ."
+        "side main .";
     }
 }
