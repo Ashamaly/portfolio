@@ -242,14 +242,11 @@ header nav ul li:hover {
     .button3 {
         grid-area: button3;
     }
-    .button4 {
-        grid-area: button4;
-    }
 
 
     .links {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         /* grid-template-areas: 
         "button1 button1 button4 button4"
@@ -282,7 +279,7 @@ footer ul li a {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #111;
-    line-height: 40px; /*makes the content more readable and aligns with icons*/
+    line-height: 50px; /*makes the content more readable and aligns with icons*/
 }
 
 .socials {
